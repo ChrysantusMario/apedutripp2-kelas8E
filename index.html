@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTrip - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+            background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
+            color: #2c3e50;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
+        }
+
+        body.fade-out {
+            opacity: 0;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            animation: slideDown 1s ease-out;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        header nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        header nav a:hover {
+            background: linear-gradient(135deg, #ff7f50, #1e90ff);
+            color: white;
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        .main-content {
+            margin-top: 140px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+    
+
+        p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #34495e;
+        }
+
+        .extra-content {
+            margin-top: 40px;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+            text-align: center;
+            margin: 20px auto;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        .extra-content a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(135deg, #ff7f50, #1e90ff);
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .extra-content a:hover {
+            background: linear-gradient(135deg, #1e90ff, #ff7f50);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff7f50;
+            }
+            to {
+                text-shadow: 0 0 20px #1e90ff;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="agamatugas.html">Agama</a>
+            <a href="ips.html">IPS</a>
+            <a href="mandarin.html">Mandarin</a>
+            <a href="ppkntugas.html">PPKN</a>
+            <a href="bahasa-indonesia.html">B. Indonesia</a>
+            <a href="bahasa-inggris.html">B. Inggris</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h1>Selamat Datang di Perjalanan EduTrip Mario!!!</h1>
+        <p>Berpetualang melihat hal seputar EduTrip Yogyakarta diberbagai mata pelajaran bersama Mario!!!.</p>
+    </div>
+
+    <div class="extra-content">
+        <h2>Agama</h2>
+        <p>Melihat tempat berdoa dan gereja di Yogyakarta yang sangat menarik!!</p>
+        <a href="agamatugas.html" class="fade-link">Lihat Materi Agama</a>
+    </div>
+
+    <div class="extra-content">
+        <h2>IPS</h2>
+        <p>Melihat hal seperti manusia purba di museum dan membajak sawah!!!</p>
+        <a href="ips.html" class="fade-link">Lihat Materi IPS</a>
+    </div>
+
+    <div class="extra-content">
+        <h2>Mandarin</h2>
+        <p>在这里查看关于 EduTrip 使用普通话的有趣故事！.</p>
+        <a href="mandarin.html" class="fade-link">Lihat Materi Mandarin</a>
+    </div>
+
+    <div class="extra-content">
+        <h2>PPKN</h2>
+        <p>Belajar mengenai budaya di Yogyakarta seperti Candi Prambanan #AkuSukaPendidikanPancasila.</p>
+        <a href="ppkntugas.html" class="fade-link">Lihat Materi PPKN</a>
+    </div>
+
+    <div class="extra-content">
+        <h2>Bahasa Indonesia</h2>
+        <p>Melihat Hasil Ulasan Hotel di Yogyakarta dan Solo!!!.</p>
+        <a href="bahasa-indonesia.html" class="fade-link">Lihat Materi B. Indonesia</a>
+    </div>
+
+    <div class="extra-content">
+        <h2>Bahasa Inggris</h2>
+        <p> Live in Experience with my Friends in Pentingsari Village!!!.</p>
+        <a href="bahasa-inggris.html" class="fade-link">Lihat Materi B. Inggris</a>
+    </div>
+
+    <script>
+        // Fade-out animation on link click
+        document.querySelectorAll('.fade-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const href = link.getAttribute('href');
+                document.body.classList.add('fade-out');
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500); // Match the duration of the fade-out animation
+            });
+        });
+    </script>
+
+</body>
+
+</html>

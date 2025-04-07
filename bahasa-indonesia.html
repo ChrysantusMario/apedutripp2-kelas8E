@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resensi - Hotel</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+            background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
+            color: #2c3e50;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        header nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        header nav a:hover {
+            background: linear-gradient(135deg, #ff7f50, #1e90ff);
+            color: white;
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        .main-content {
+            margin-top: 140px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+    
+
+        p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            animation: slideUp 1s ease-in-out;
+            color: #34495e;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            border-image: linear-gradient(135deg, #ff7f50, #1e90ff) 1;
+            animation: popUp 1s ease-out;
+        }
+
+        .top-image {
+            margin-top: 120px;
+            width: 150%;
+            max-width: 1500px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeInZoom 1.5s ease;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            background: linear-gradient(135deg, #ff7f50, #1e90ff);
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #1e90ff, #ff7f50);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff7f50;
+            }
+            to {
+                text-shadow: 0 0 20px #1e90ff;
+            }
+        }
+
+        @keyframes popUp {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="agamatugas.html">Agama</a>
+            <a href="ips.html">IPS</a>
+            <a href="mandarin.html">Mandarin</a>
+            <a href="ppkntugas.html">PPKN</a>
+            <a href="bahasa-indonesia.html">B. Indonesia</a>
+            <a href="bahasa-inggris.html">B. Inggris</a>
+        </nav>
+    </header>
+
+
+    <div class="main-content">
+        <h1>Materi Bahasa Indonesia</h1>
+        <p>Ini adalah teks resensi hotel yang saya buat selama saya edutrip!!.</p>
+        <div class="content-box">
+            <p>Hotel Novotel Solo merupakan salah satu hotel yang terletak di daerah Surakarta, Jawa
+                Tengah, Indonesia. Hotel ini merupakan salah satu hotel internasional di daerah Surakarta.
+                Awalnya, hotel ini dibuka pada tahun 1997 dan dikelola oleh Accor dan hotel berbintang 4 ini
+                dimiliki oleh Sun Motor Group. Alamat Hotel Novotel Solo ini terletak di Jalan Slamet Riyadi No.
+                272, Banjarsari, Surakarta, Jawa Tengah, Indonesia. Jumlah kamar Hotel Novotel Solo berjumlah
+                145 kamar yang terdiri dari 8 lantai. Terdapat banyak fasilitas yang dimiliki oleh Hotel Novotel Solo
+                ini, antara lain adalah kolam renang, tempat spa, tempat berolahraga, restoran dan ruang rapat.
+                Lokasi hotel ini cukup strategis yaitu terdapat mall dan juga stasiun di dekat hotel tersebut.
+                Sejarah hotel ini adalah pembangunannya sudah direncanakan dan diskusikan sejak tahun 1991
+                oleh Imelda Sundoro. Imelda Sundoro adalah salah satu pendiri dan pemilik Sun Motor Group.
+                Alasan pemilihan untuk meresensi Hotel Novotel Solo ini karena ingin membandingkan dengan
+                Hotel Grand Mercure Yogyakarta karena sebelumnya sudah mencoba tinggal di hotel tersebut.
+                Selain itu, resensi ini berfokus pada objek ruangan yaitu kamar hotel.
+                
+                Setelah masuk ke kamar hotel ini, suasana kamar terasa sejuk dan segar karena telah
+                dilengkapi satu buah AC. Terdapat banyak elemen - elemen budaya Indonesia di gorden dan juga
+                tembok kamar. Ukuran kamar ini cukup besar dan luas dan dilengkapi oleh kamar mandi. Selain itu,
+                jarak antara pintu dan tempat tidur tidak terlalu jauh dan tidak terlalu dekat sehingga penempatan
+                antara pintu dan tempat tidur cukup strategis. Di dalam kamar, terdapat satu meja kecil dan satu
+                meja panjang lalu dilengkapi dengan lampu. Tepat di samping meja, terdapat sofa yang memiliki
+                bahan yang empuk dan juga cukup besar. Kamar ini memiliki total dua kasur yang dilengkapi
+                dengan satu selimut dan dua bantal diantaranya, selain itu bahan - bahan yang digunakan lembut
+                sehingga nyaman jika menggunakan kasur tersebut. Kamar mandi di kamar ini tidak begitu luas
+                tetapi sudah dilengkapi dengan fasilitas yang baik.
+                
+                Terdapat banyak keunggulan dari kamar Hotel Novotel Solo ini. Salah satu kelebihannya
+                adalah memiliki kasur yang luas dan satu sofa sehingga nyaman ketika berada di kamar hotel
+                tersebut. Selain itu terdapat satu televisi yang memiliki ukuran besar dan nyaman ketika sedang
+                menonton televisi. Terdapat kulkas kecil dan lemari yang besar dan berisi gantungan baju.
+                
+                Selain kelebihan, terdapat kekurangan yaitu kamar mandi memiliki ukuran yang tidak terlalu
+                besar dan cenderung sempit. Selain itu, pintu kamar mandi tersebut tidak bisa di kunci dengan
+                baik sehingga mengganggu kenyamanan tetapi mungkin kamar lain tidak rusak dan hanya satu
+                kamar saja.
+                
+                Jika dibandingkan dengan Hotel Grand Mercure Yogyakarta, hotel ini hanya memiliki sedikit
+                keunggulan yaitu kamar Novotel Solo lebih luas. Selain itu terdapat sofa tambahan yang tidak
+                dimiliki Grand Mercure Yogyakarta. Hotel Grand Mercure Yogyakarta tidak memiliki lemari dan
+                Hotel Novotel Solo memiliki lemari yang luas.
+                
+                Hotel Novotel Solo ini sangat cocok bagi yang ingin liburan di Solo dan tidak jauh berbeda
+                dengan Hotel Grand Mercure Yogyakarta, tetapi masih terdapat kekurangan yaitu kamar mandi
+                masih terlalu sempit. Secara keseluruhan, hotel ini sudah memenuhi kriteria hotel yang baik dan
+                fasilitas yang lengkap. Identitas Resensor
+                Nama : Chrysantus Mario Bagus Dewabrata
+                Meert
+                Kelas : 8E
+                Absen : 7</p>
+
+        </div>
+    </div>
+    <img src="bindogambar.jpg".jpg" alt="GambarBindo" class="top-image">
+</body>
+
+</html>
